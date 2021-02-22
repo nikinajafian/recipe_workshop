@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #ffffff60;
+}
+
+#top {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 100px 15% 0px 15%;
+  font-family: orpheuspro, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#top h1 {
+  font-size: 7em;
+  line-height: 1em;
+  text-align: center;
+}
+
+#top h2 {
+  font-size: 3em;
+  font-weight: 300;
+  color: rgb(75, 75, 75);
+  text-align: center;
+  line-height: 1.3em;
+}
+
+#top h3 {
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+#top p {
+  width: 90%;
+  font-family: quasimoda, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  border-top: 1px solid black;
+  padding-top: 20px;
+  margin-top: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 40px 0 20px 0;
+}
+
+#top img {
+  max-width: 90%;
+}
+
+.bg-box {
+  position: absolute;
+  height: 80%;
+  width: 110%;
+  background-color: rgba(248, 229, 183, 0.822);
+  z-index: -1;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 75px 10% 25px 10%;
+}
+
+.info-block {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.info-header {
+  font-family: quasimoda, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+.info-details {
+  font-family: orpheuspro, serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.5em;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 75px 15%;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#ingredients {
+  width: 25%;
+  min-width: 200px;
+  padding: 22px;
+  background-color: rgba(248, 229, 183, 0.349);
+  border-radius: 15px;
+}
+
+#ingredients h3 {
+  font-size: 1.75em;
+  padding-bottom: 10px;
+}
+
+.ingredient {
+  padding: 7px 0px;
+  line-height: 1.2em;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+#middle-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 50%;
+  min-width: 250px;
+  margin: 0 5%;
+}
+
+#middle-box a {
+  margin-top: 60px;
+  font-family: orpheuspro, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  transition: 200ms all ease-in-out;
+}
+
+#middle-box a:hover {
+  color: rgba(248, 229, 183, 0.822);
+}
+
+#steps {
+  width: 100%;
+  height: auto;
+  padding: 22px;
+  background-color: rgba(248, 229, 183, 0.349);
+  border-radius: 15px;
+}
+
+#steps h3 {
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+
+.step-num {
+  font-size: 1.25em;
+  padding: 10px 0 0 0;
+}
+
+.step {
+  padding: 7px 0px;
+  line-height: 1.2em;
+}
+
+#tips {
+  width: 25%;
+  min-width: 150px;
+}
+
+.tip {
+  padding: 22px;
+  background-color: rgba(248, 229, 183, 0.349);
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+.tip h5 {
+  font-size: 1.25em;
+}
+
+.tip p {
+  padding: 7px 0px;
+  line-height: 1.2em;
+}
+
+@media only screen and (max-width: 960px) {
+    #content {
+        flex-flow: column nowrap;
+        padding: 75px 5%;
+    }
+
+    #ingredients {
+        width: 100%;
+    }
+
+    #middle-box {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    #tips {
+        display: none;
+    }
+
+    #info {
+        padding: 75px 5% 25px 5%;
+      }
+      
+      .info-header {
+        font-family: quasimoda, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 3vw;
+      }
+      
+      .info-details {
+        font-family: orpheuspro, serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 5vw;
+      }
+
+      #top {
+        padding: 100px 5% 0px 5%;
+      }
+      
+      #top h1 {
+        font-size: 13vw;
+      }
+      
+      #top h2 {
+        font-size: 8vw;
+        padding-top: 20px;
+      }
+      
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin: 40px 0 20px 0;
+      }
+      
+      .bg-box {
+        width: 100%;
+      }
+  }
